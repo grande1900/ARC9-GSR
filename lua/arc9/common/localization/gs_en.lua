@@ -77,6 +77,8 @@ L["csgo_class_weapon_grenade"] = "Grenade"
 L["csgo_class_weapon_special"] = "Special"
 
 -- [[ Weapon Display Names ]]
+L["csgo_weapon_ak47"] = ""
+--[[
 L["csgo_weapon_ak47"] = "AK-47"
 L["csgo_weapon_ak47_rpk"] = "RPK"
 L["csgo_weapon_ak47_ak74"] = "AK-74"
@@ -84,6 +86,15 @@ L["csgo_weapon_ak47_rpk74"] = "RPK-74"
 L["csgo_weapon_ak47_aks74u"] = "AKS-74U"
 L["csgo_weapon_ak47_ak101"] = "AK-101"
 L["csgo_weapon_ak47_rpk201"] = "RPK-201"
+]]
+L["csgo_weapon_ak47_ak"] = "AK"
+L["csgo_weapon_ak47_s"] = "S"
+L["csgo_weapon_ak47_rpk"] = "RPK"
+L["csgo_weapon_ak47_u"] = "U"
+L["csgo_weapon_ak47_47"] = "-47"
+L["csgo_weapon_ak47_74"] = "-74"
+L["csgo_weapon_ak47_101"] = "-101"
+L["csgo_weapon_ak47_201"] = "-201"
 
 L["csgo_weapon_akimbo_cz75"] = "Dual CZ75-Auto"
 L["csgo_weapon_akimbo_deagle"] = "Dual Desert Eagle"

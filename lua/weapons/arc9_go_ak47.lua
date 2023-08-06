@@ -733,27 +733,26 @@ SWEP.AttachmentTableOverrides = {
 
 SWEP.HookP_NameChange = function(self, name)
 	local att = self:GetElements()
-	
-	if att["csgo_ak47_barrel_long"] and att["csgo_ak47_stock_rpk"] then
+	name = ARC9:GetPhrase("csgo_weapon_ak47_ak")
+	if att["csgo_ak47_barrel_long"] then
 		name = ARC9:GetPhrase("csgo_weapon_ak47_rpk")
 	end
-
-	if (att["csgo_ak47_mag_545"] or att["csgo_ak47_mag_545_ext"]) then
-		name = ARC9:GetPhrase("csgo_weapon_ak47_ak74")
-		
-		if att["csgo_ak47_barrel_long"] and att["csgo_ak47_stock_rpk"] then
-			name = ARC9:GetPhrase("csgo_weapon_ak47_rpk74")
-		end
-		if att["csgo_ak47_barrel_short"] and att["csgo_ak47_stock_skeleton"] then
-			name = ARC9:GetPhrase("csgo_weapon_ak47_aks74u")
-		end
+	if att["csgo_ak47_stock_skeleton"] then
+		name = name..ARC9:GetPhrase("csgo_weapon_ak47_s")
 	end
-	
-	if (att["mag_556"] or att["mag_556_ext"]) then
-		name = ARC9:GetPhrase("csgo_weapon_ak47_ak101")
-		if att["csgo_ak47_barrel_long"] and att["csgo_ak47_stock_rpk"] then
-			name = ARC9:GetPhrase("csgo_weapon_ak47_rpk201")
+	if (att["csgo_ak47_mag_545"] or att["csgo_ak47_mag_545_ext"]) then
+		name = name..ARC9:GetPhrase("csgo_weapon_ak47_74")
+	elseif (att["mag_556"] or att["mag_556_ext"]) then
+		if att["csgo_ak47_barrel_long"] then
+			name = name..ARC9:GetPhrase("csgo_weapon_ak47_201")
+		else
+			name = name..ARC9:GetPhrase("csgo_weapon_ak47_101")
 		end
+	else
+		name = name..ARC9:GetPhrase("csgo_weapon_ak47_47")
+	end
+	if att["csgo_ak47_barrel_short"] then
+		name = name..ARC9:GetPhrase("csgo_weapon_ak47_u")
 	end
 -- For Skins
 	local skin = "moka_csgo_skin_ak47_"
