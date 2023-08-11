@@ -84,8 +84,8 @@ ARC9.LoadAttachment(ATT, "csgo_ak47_barrel_short")
 ATT = {}
 
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
-ATT.PrintName = "415mm Spetsnaz Barrel"
-ATT.CompactName = "415mm T"
+ATT.PrintName = "415mm RIS Barrel"
+ATT.CompactName = "415mm RIS"
 ATT.Description = [[Tactical handguard with attachment rails for additional coolness. Reduced weight compared to standard barrel.]]
 ATT.SortOrder = 2
 
@@ -107,6 +107,33 @@ ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.1
 
 ARC9.LoadAttachment(ATT, "csgo_ak47_barrel_tactical")
+-------------------------------------------------------------------------------------------------
+ATT = {}
+
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.PrintName = "415mm Spetsnaz Barrel"
+ATT.CompactName = "415mm T"
+ATT.Description = [[Tactical handguard with attachment rails for additional coolness. Reduced weight compared to standard barrel.]]
+ATT.SortOrder = 2
+
+ATT.Icon = Material("entities/attachs/go_ak_barrel_tac.png", "mips smooth")
+ATT.AutoStats = true
+
+ATT.Free = false
+
+ATT.Category = {"go_ak47_barrel"}
+ATT.ActivateElements = {"barrel_tac_alt"}
+
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
+
+ATT.RangeMaxMult = 1.15
+ATT.RangeMinMult = 1.15
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+
+ARC9.LoadAttachment(ATT, "csgo_ak47_barrel_tac_alt")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 

@@ -218,6 +218,15 @@ SWEP.IronSightsHook = function(self)
 			ViewModelFOV = 56,
         }
     end
+	
+     if attached["csgo_ak47_barrel_tac_alt"] then
+        return {
+            Pos = Vector(-4.985, -7.5, 1),
+            Ang = Angle(0.15, 0.1, -1.5),
+			Magnification = 1.25,
+			ViewModelFOV = 56,
+        }
+    end
 end
 
 SWEP.IronSightsPos = Vector(-4.989, -10, 1.118)
@@ -662,6 +671,12 @@ SWEP.AttachmentElements = {
     ["barrel_tactical"] = {
         Bodygroups = {
             {3,1},
+        },
+    AttPosMods = { [2] = { Pos = Vector(0, -3.4, 25.3), } }
+    },
+	["barrel_tac_alt"] = {
+        Bodygroups = {
+            {3,4},
         },
     AttPosMods = { [2] = { Pos = Vector(0, -3.4, 25.3), } }
     },
